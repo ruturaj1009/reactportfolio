@@ -6,6 +6,7 @@ import NavBar from "../components/navbar/NavBar";
 import Resume from "../components/resume/Resume";
 import Skills from "../components/skills/Skills";
 import Work from "../components/work/Work";
+import { Toaster } from "react-hot-toast";
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,6 +15,7 @@ const Home = () => {
   }
   return (
     <>
+      <Toaster />
       <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
